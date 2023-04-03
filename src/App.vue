@@ -9,6 +9,9 @@
 <script>
 export default {
   name: 'App',
+  mounted() {
+    document.title = 'Our retirement page';
+  },
   data() {
     return {
       retirementDate: new Date('2028-04-01'),
