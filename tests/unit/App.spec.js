@@ -9,4 +9,15 @@ describe('App.vue', () => {
     })
     expect(wrapper.text()).toMatch(msg)
   })
+
+  it('returns the corect number of days until retirement', () => {
+    const wrapper = shallowMount(App)
+    expect(wrapper.vm.daysLeft).toBe(1825)
+  })
+
+  it('returns the corect number of weeks until retirement', () => {
+    const wrapper = shallowMount(App)
+    expect(wrapper.vm.weeksLeft).toBe(261)
+  })
+
 })
