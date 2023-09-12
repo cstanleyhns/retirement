@@ -1,8 +1,9 @@
 <template>
   <div class="countdown">
     <h1>Countdown to Retirement</h1>
-    <p class="countdown-text">{{ daysLeft }} days left until retirements</p>
-    <p class="countdown-text">{{ weeksLeft }} weeks left until retirements</p>
+    <p class="countdown-text">{{ daysLeft }} days left until retirement</p>
+    <p class="countdown-text">{{ weeksLeft }} weeks left until retirement</p>
+    <p class="countdown-text">{{ yearsLeft }} years left until retirement</p>
   </div>
 </template>
 
@@ -28,6 +29,11 @@ export default {
       const oneWeek = 7 * 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
       const diffWeeks = Math.round(Math.abs((this.retirementDate - this.currentDate) / oneWeek));
       return diffWeeks;
+    },
+    yearsLeft() {
+      const oneYear = 365 * 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+      const diffYears = Math.round(Math.abs((this.retirementDate - this.currentDate) / oneYear));
+      return diffYears;
     },
   },
 }
