@@ -32,7 +32,7 @@ export default {
     },
     yearsLeft() {
       const oneYear = 365 * 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-      const diffYears = Math.round(Math.abs((this.retirementDate - this.currentDate) / oneYear));
+      const diffYears = (Math.abs((this.retirementDate - this.currentDate) / oneYear));
       return diffYears;
     },
   },
