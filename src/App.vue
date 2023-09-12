@@ -1,8 +1,8 @@
 <template>
   <div class="countdown">
     <h1>Countdown to Retirement</h1>
-    <p class="countdown-text">{{ daysLeft }} days left until retirement</p>
-    <p class="countdown-text">{{ weeksLeft }} weeks left until retirement</p>
+    <p class="countdown-text">{{ daysLeft }} days left until retirements</p>
+    <p class="countdown-text">{{ weeksLeft }} weeks left until retirements</p>
   </div>
 </template>
 
