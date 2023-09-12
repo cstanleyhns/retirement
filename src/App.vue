@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      retirementDate: new Date('2028-04-01'),
+      retirementDate: new Date('2027-09-01'),
       currentDate: new Date(),
     }
   },
@@ -30,10 +30,11 @@ export default {
       const diffWeeks = Math.round(Math.abs((this.retirementDate - this.currentDate) / oneWeek));
       return diffWeeks;
     },
-    yearsLeft() {
+    yearsLeft() {  
       const oneYear = 365 * 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
       const diffYears = (Math.abs((this.retirementDate - this.currentDate) / oneYear));
-      return diffYears;
+      
+      return diffYears.toFixed(2);
     },
   },
 }
