@@ -1,6 +1,6 @@
 <template>
   <div class="countdown">
-    <h1>Countdown to Retirement</h1>
+    <h1 class="countdown-title">Countdown to Retirement</h1>
     <p class="countdown-text">{{ daysLeft }} days left until retirement</p>
     <p class="countdown-text">{{ weeksLeft }} weeks left until retirement</p>
     <p class="countdown-text">{{ monthsLeft }} months left until retirement</p>
@@ -58,6 +58,12 @@ export default {
 
 .countdown-text {
   font-size: 36px;
+  color: #1c1c1c;
+  margin-top: 0;
+}
+
+.countdown-title {
+  font-size: 46px;
   font-weight: bold;
   color: #1c1c1c;
   margin-top: 0;
