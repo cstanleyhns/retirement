@@ -30,6 +30,11 @@ export default {
       const diffWeeks = Math.round(Math.abs((this.retirementDate - this.currentDate) / oneWeek));
       return diffWeeks;
     },
+    monthsLeft() {
+      const oneMonth = 30 * 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+      const diffMonths = Math.round(Math.abs((this.retirementDate - this.currentDate) / oneMonth));
+      return diffMonths;
+    },
     yearsLeft() {  
       const oneYear = 365 * 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
       const diffYears = (Math.abs((this.retirementDate - this.currentDate) / oneYear));
